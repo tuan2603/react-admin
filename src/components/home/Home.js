@@ -3,7 +3,21 @@ import Navbar from '../navbar/Navbar';
 import Sidebar from '../navbar/Sidebar';
 import Footer from '../footer/Footer';
 
+
 class Home extends Component {
+    componentDidMount () {
+
+            let script = document.createElement("script");
+            script.src = '../../assets/vendor/bootstrap/js/bootstrap.min.js';
+            script.async = true;
+            document.body.appendChild(script);
+            script.src = '../../assets/vendor/jquery/jquery.min.js';
+            script.async = true;
+            document.body.appendChild(script);
+
+        //loadScript('../../assets/vendor/jquery-slimscroll/jquery.slimscroll.min.js');
+        //loadScript('../../assets/scripts/klorofil-common.js');
+    }
     render() {
         return (
             <div>
